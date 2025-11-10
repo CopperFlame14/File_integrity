@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Integrity Verification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📁 File Integrity Verification</h1>
+
+      <section class="upload-section">
+        <h2>Sender Upload</h2>
+        <input type="text" id="receiverId" placeholder="Enter Receiver ID" />
+        <input type="file" id="fileInput" />
+        <button onclick="uploadFile()">Upload File</button>
+        <p id="uploadStatus"></p>
+      </section>
+
+      <section class="receiver-section">
+        <h2>Receiver Access</h2>
+        <input type="text" id="downloadReceiverId" placeholder="Enter Receiver ID" />
+        <button onclick="downloadFile()">Download File</button>
+        <button onclick="verifyFile()">Verify Integrity</button>
+        <p id="verifyStatus"></p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
